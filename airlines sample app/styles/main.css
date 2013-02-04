@@ -85,9 +85,7 @@ body {
     box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.3),0 1px 1px rgba(255,255,255,0.2);
 }
 .ice-logo {
-   content:url("../images/ice_air_logo.png");
-   background-size:100%;
-    -webkit-device-pixel-ratio:1.5;
+	content:url("../images/ice_air_logo.png");
 }
 .clear {
     clear:both;
@@ -114,4 +112,42 @@ body {
 #map_canvas
 {
     text-align:center;
+}
+
+/* BUTTON STYLES*/
+.ui-bar-a > .ui-btn-up-a {
+    border:none;
+    background-image: -moz-linear-gradient(top, rgba(41,192,227,1) 0%, rgba(6,123,152,1) 100%); /* FF3.6+ */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(41,192,227,1)), color-stop(100%,rgba(6,123,152,1))); /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(top, rgba(41,192,227,1) 0%,rgba(6,123,152,1) 100%); /* Chrome10+,Safari5.1+ */
+    background-image: -o-linear-gradient(top, rgba(41,192,227,1) 0%,rgba(6,123,152,1) 100%); /* Opera 11.10+ */
+    background-image: -ms-linear-gradient(top, rgba(41,192,227,1) 0%,rgba(6,123,152,1) 100%); /* IE10+ */
+    background-image: linear-gradient(to bottom, rgba(41,192,227,1) 0%,rgba(6,123,152,1) 100%); /* W3C */
+}
+.ui-bar-a > .ui-btn-hover-a {
+    border:none;
+    background-image: -moz-linear-gradient(top, rgba(6, 123, 152, 1) 0%, rgba(41, 192, 227, 1) 100%); /* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(6, 123, 152, 1)), color-stop(100%, rgba(41, 192, 227, 1))); /* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top, rgba(6, 123, 152, 1) 0%, rgba(41, 192, 227, 1) 100%); /* Chrome10+,Safari5.1+ */
+	background-image: -o-linear-gradient(top, rgba(6, 123, 152, 1) 0%, rgba(41, 192, 227, 1) 100%); /* Opera 11.10+ */
+	background-image: -ms-linear-gradient(top, rgba(6, 123, 152, 1) 0%, rgba(41, 192, 227, 1) 100%); /* IE10+ */
+	background-image: linear-gradient(to bottom, rgba(6, 123, 152, 1) 0%, rgba(41, 192, 227, 1) 100%); /* W3C */
+}
+
+.ui-bar-b
+{
+	border: 1px solid #456F9A;
+	color: white;
+	font-weight: bold;
+	text-shadow: 0 1px 1px #3E6790;
+	background-image: -moz-linear-gradient(top, rgba(6, 123, 152, 1) 0%, rgba(41, 192, 227, 1) 100%); /* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(6, 123, 152, 1)), color-stop(100%, rgba(41, 192, 227, 1))); /* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top, rgba(6, 123, 152, 1) 0%, rgba(41, 192, 227, 1) 100%); /* Chrome10+,Safari5.1+ */
+	background-image: -o-linear-gradient(top, rgba(6, 123, 152, 1) 0%, rgba(41, 192, 227, 1) 100%); /* Opera 11.10+ */
+	background-image: -ms-linear-gradient(top, rgba(6, 123, 152, 1) 0%, rgba(41, 192, 227, 1) 100%); /* IE10+ */
+	background-image: linear-gradient(to bottom, rgba(6, 123, 152, 1) 0%, rgba(41, 192, 227, 1) 100%); /* W3C */
+}
+
+.ui-content .ui-listview-inset {
+    margin: 1em 5px;
 }

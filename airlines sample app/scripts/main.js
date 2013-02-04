@@ -86,8 +86,10 @@ airlinesApp.prototype = function() {
     _initCheckIn = function(){
         var currentseg = _flightForCheckin.segments[_flightForCheckin.currentSegment],
 	    seat = currentseg.seat,
-	    flight = currentseg.flightNum + ':' + currentseg.from + ' to ' + currentseg.to;
-	    $('#checkIn-flight').text(flight);
+	    flight = currentseg.from + ' to ' + currentseg.to;
+	    $('#checkIn-flight-number').text(currentseg.flightNum);
+	    $('#checkIn-flight-destination').text(flight);
+        
 	    $('#checkIn-seat').text(seat);
     },
     
