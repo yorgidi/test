@@ -87,6 +87,8 @@ body {
 .ice-logo {
 	content:url("../images/ice_air_logo.png");
     margin-top: 7px;
+    width:100px;
+    height:100px;
 }
 .clear {
     clear:both;

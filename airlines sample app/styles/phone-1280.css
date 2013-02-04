@@ -1,5 +1,5 @@
 .ice-logo {
-   content:url("../images/ice_air_logo@x2.png");
+   content:url("../images/ice_air_logo.png");
    background-size:100%;
 }
 #myTripsListView .checkIn a:before, #myTripsListView .tripDetail a:before {
