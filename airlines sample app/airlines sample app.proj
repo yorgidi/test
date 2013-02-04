@@ -35,6 +35,7 @@
     <Folder Include="jquery-mobile" />
     <Folder Include="jquery-mobile\images" />
     <Folder Include="scripts" />
+    <Folder Include="styles\images" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="App_Resources\iOS\Default-568h@2x.png" />
@@ -78,6 +79,8 @@
     <Content Include="scripts\airlinedata.js" />
     <Content Include="scripts\main.js" />
     <Content Include="scripts\seatmapdrawing.js" />
+    <Content Include="styles\images\icons-18.png" />
+    <Content Include="styles\images\icons-36.png" />
     <Content Include="styles\main.css" />
     <Content Include="cordova.ios.js">
       <Platform>iOS</Platform>
