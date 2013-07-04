@@ -20,28 +20,28 @@ airlinesApp.prototype = function() {
     run = function(){
         var that = this,
         $seatPicker=$('#seatPicker');
-        $('#tripDetail').live('pagebeforeshow',$.proxy(_initTripDetail,that));
-        $('#boardingPass').live('pageshow',$.proxy(_initBoardingPass,that));
-        $('#home').live('pagebeforecreate',$.proxy(_initHome,that));
-        $('#checkIn').live('pageshow', $.proxy(_initCheckIn,that));
-        $('.tripDetail').live('click', function () {
+        $('#tripDetail').on('pagebeforeshow',$.proxy(_initTripDetail,that));
+        $('#boardingPass').on('pageshow',$.proxy(_initBoardingPass,that));
+        $('#home').on('pagebeforecreate',$.proxy(_initHome,that));
+        $('#checkIn').on('pageshow', $.proxy(_initCheckIn,that));
+        $('.tripDetail').on('click', function () {
         	var item = $(this);
         	_flightForDetails = item.data('flight');
         });
         
-        $('.checkIn').live('click', function () {
+        $('#myTripsListView').on('click', 'li', function () {
         	var item = $(this);
         	_flightForCheckin = item.data('flight');
         });
         
-        $seatPicker.live('pageshow', function (event) {
+        $seatPicker.on('pageshow', function (event) {
         	var el = $('#seatMapPickerContainer', this),
         	seat = _flightForCheckin.segments[_flightForCheckin.currentSegment].seat;
         	seatMapDrawing.drawSeatMap(el, seat);
         
         });
         
-        $seatPicker.live('pagebeforehide', function (event) {
+        $seatPicker.on('pagebeforehide', function (event) {
         	_flightForCheckin.segments[_flightForCheckin.currentSegment].seat = seatMapDrawing.getselectedSeat();
         });
     },
