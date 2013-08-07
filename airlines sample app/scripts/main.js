@@ -24,14 +24,11 @@ airlinesApp.prototype = function() {
         $('#boardingPass').on('pageshow',$.proxy(_initBoardingPass,that));
         $('#home').on('pagebeforecreate',$.proxy(_initHome,that));
         $('#checkIn').on('pageshow', $.proxy(_initCheckIn,that));
-        $('.tripDetail').on('click', function () {
-        	var item = $(this);
-        	_flightForDetails = item.data('flight');
-        });
         
         $('#myTripsListView').on('click', 'li', function () {
         	var item = $(this);
         	_flightForCheckin = item.data('flight');
+            _flightForDetails = item.data('flight');
         });
         
         $seatPicker.on('pageshow', function (event) {
