@@ -26,5 +26,9 @@ fkdfdkhf
 fdfdfd
 
         }
+		public static void Test()
+		{
+		return;
+		{
     }
 }
