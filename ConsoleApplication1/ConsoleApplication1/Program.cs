@@ -10,8 +10,12 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
+fdsal; fdlskahflasdjkf
+kjflk'ashkf'
+ashf
+hlkdaf'f
+d
 
-fdfdfdfd
         }
     }
 }
